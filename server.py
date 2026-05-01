@@ -646,7 +646,7 @@ def internal_error(e):
 # Production: gunicorn runs `app` directly via Procfile / railway.toml
 # Development: python server.py
 if __name__ == "__main__":
-    port  = int(os.environ.get("PORT", 5000))
+    port  = int(os.environ.get("PORT", 8080))
     debug = os.environ.get("DEBUG", "false").lower() == "true"
 
     logger.info(f"🌙 LunarYtdl Server starting on port {port}")
