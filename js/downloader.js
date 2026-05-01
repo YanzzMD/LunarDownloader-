@@ -8,7 +8,7 @@ const Downloader = (function () {
   'use strict';
 
   // ── Config ────────────────────────────────────────────────
-  const API_BASE = window.LUNARYTDL_API || 'http://localhost:5000/api';
+  const API_BASE = window.LUNARYTDL_API || '${window.location.origin}/api';
   const POLL_INTERVAL = 800; // ms
 
   // ── State ─────────────────────────────────────────────────
